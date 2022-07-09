@@ -1,2 +1,2 @@
-*.aijson
 /.idea
+*__pycache__
