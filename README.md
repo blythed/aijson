@@ -10,7 +10,7 @@ pip3 install aijson
 
 ## Philosophy
 
-Saving and serializing in Python3 is supported by, for instance, `pickle` and `dill`. We believe that logging parameters in a Pythonic and flexible way is undersupported. Once a model or experimented has been executed, it should be easy to inspect which parameters were used. If the experiment is to be rerun or modified, it should be possible to do this with some simple overrides.
+Saving and serializing in Python3 is supported by, for instance, `pickle` and `dill`. However, we believe that logging parameters in a Pythonic and flexible way is undersupported. Once a model or experiment has been executed, it should be easy to inspect which parameters were used. If the experiment is to be rerun or modified, it should be possible to do this with some simple overrides.
 
 ## Minimum working example
 
