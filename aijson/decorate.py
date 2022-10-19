@@ -55,7 +55,6 @@ class AiJson:
         def _myinit(aself, **kwargs):
             if self.vanilla:
                 return f._old_init(aself, **kwargs)
-            import pdb; pdb.set_trace()
             kwargs_ = self.substitute(kwargs)
             f._old_init(aself, **kwargs)
             id_ = id(aself)

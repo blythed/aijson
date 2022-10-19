@@ -20,7 +20,7 @@ def parse_requirements(filename):
 
 
 setuptools.setup(
-    name="AI-json",
+    name="aijson",
     version=versions['__version__'],
     author="Duncan Blythe",
     author_email="duncanblythe@gmail.com",
