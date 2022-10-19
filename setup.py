@@ -20,7 +20,7 @@ def parse_requirements(filename):
 
 
 setuptools.setup(
-    name="aijson",
+    name="ai-jsonable",
     version=versions['__version__'],
     author="Duncan Blythe",
     author_email="duncanblythe@gmail.com",

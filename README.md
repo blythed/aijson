@@ -1,11 +1,11 @@
-# AI-JSON
+# AI-JSONABLE
 
 Parameter and settings tracking in Python3 for jsonable output.
 
 ## Installation
 
 ``` 
-pip3 install aijson
+pip3 install ai-jsonable
 ```
 
 ## Philosophy
