@@ -19,19 +19,23 @@ def formatter_factory(format="json", path=None):
 
 
 class LogDisposer:
-    def __init__(self, data=None):
-        self.data = data
+    def __init__(self, graph=None):
+        self._graph = graph
+
+    @property
+    def graph(self):
+        return self._graph 
 
     def dump(path=".model.ai.json", format="json"):
         formatter = formatter_factory(format=format, path=path)
-        formatter.dump(self.data)
+        formatter.dump(self.graph)
 
     def __str__(self):
-        return json.dumps(self.data)
+        return json.dumps(self.graph)
 
 
 @contextlib.contextmanager
 def logging_context():
     aijson.reset()
-    yield LogDisposer(data=aijson.graph)
+    yield LogDisposer(graph=aijson.graph)
     aijson.reset()
